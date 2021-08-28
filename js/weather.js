@@ -1,7 +1,7 @@
 const loadTemp = () => {
     const inputName = document.getElementById('city-name');
     const searchText = inputName.value;
-    // console.log(searchText);
+    inputName.value = '';
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=37afafe201c8656df230a7fd84b332ee`
     fetch(url)
